@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CareDash Coding Challenge</title>
+
+    <!-- imports -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="bootstrap.js"></script>
+</head>
+<!-- Bootstrap is my friend! -->
+
+<body>
+  <script type="text/javascript">
+    /* Login Logic */
+    $( "#login" ).submit(function( event ) {
+      var l = document.forms["login"]["password"].value;
+      console.log(l);
+      if (l == "") {
+          alert("Password must be filled out");
+          return false;
+      }
+      console.log(event.password);
+      event.preventDefault();
+    });
+</script>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- grabbed CareDash SVG -->
+                <a href="#" class="navbar-brand" style="width: 200px; margin-right: 0px; margin-left: 4px; margin-bottom: 12px; top: 0px;"><img src="logo.svg" alt=""/></a>
+            </div>
+            <div class="collapse navbar-collapse" id="defaultNavbar1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <!-- dropdown list -->
+                        <a href="#" class="dropdown-toggle" style="top: 10px;" aria-expanded="false" role="button" data-toggle="dropdown">Review a Doctor<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Living Well</a></li>
+                            <li><a href="#">Family</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                        <li class="dropdown"><a style="top: 10px;" href="#">Find a Doctor</a></li>
+                        <li class="dropdown"><a style="top: 10px;" href="#">Health 101</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="text-justify col-sm-4 col-lg-5"><img src="caredash.jpg" width="600" height="399" alt="" /></div>
+            <div class="col-sm-4 text-justify col-lg-offset-2">
+                <h2>Sign Up with CareDash<br>
+                </h2>
+                <h4>Edit your Provider Profile<br>
+                </h4>
+                <!-- the form! some login logic implemented -->
+                <form class="navbar-form navbar-left" id="login">
+                    <div class="form-group">
+                        <input style="margin-bottom: 10px;" type="text" class="form-control" placeholder="First Name">
+                        <input style="margin-bottom: 10px;" type="text" class="form-control" placeholder="Last Name">
+                        <input style="margin-bottom: 10px;" type="text" class="form-control" placeholder="Email Address">
+                        <input style="margin-bottom: 10px;" type="text" name="password" class="form-control" placeholder="Password">
+                        <input style="margin-bottom: 10px;" type="text" class="form-control" placeholder="Confirm Password">
+                    </div>
+                    <div></div>
+                    <button type="button" class="btn btn-info btn-sm">Sign Up</button>
+                    <button type="submit" style="margin-left: 10px;" class="btn btn-success btn-sm">Login</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="text-center col-md-12">
+                <div class="well"><strong> At CareDash, we want to make finding the right doctor easy. That's why we're dedicated to improving your experience of finding a doctor that meets your needs.</strong></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <h4>How CareDash Collects Reviews<br>
+                </h4>
+                <p>Patients are encouraged to search CareDash for their provider and write a review. Every patient must sign up to ensure that all reviews are written by real people. We ask patients to leave honest, respectful, and detailed reviews that
+                    follow our guidelines. </p>
+            </div>
+            <div class="text-center col-sm-4">
+                <h4>A Commitment to Reliable Reviews<br>
+                </h4>
+                <p>Every review on CareDash goes through an approval process to ensure that we are publishing the most trustworthy reviews. In addition, we never accept financial compensation from providers or hospitals in exchange for the removal of negative
+                    reviews.
+                </p>
+            </div>
+            <div class="text-center col-sm-4">
+                <h4>Informative and Transparent Reviews<br>
+                </h4>
+                <p>When patients rate and review doctors or hospitals on CareDash, they take a variety of experiences into account, including treatment, bedside manner, communication, wait times, administrative staff, and scheduling.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="text-left col-md-6 col-md-offset-3 col-lg-offset-0 col-lg-3">
+                <h4>CareDash </h4>
+                <p><a href="https://www.caredash.com/">Home</a><br>
+                  <a href="https://www.caredash.com/">About</a><br>
+                  <a href="https://www.caredash.com/">Contact</a><br>
+                  <a href="https://www.caredash.com/">Write a Review</a><br>
+                  <br>
+                CareDash Copyright &copy; 2018 <br>All Rights Reserved </p>
+            </div>
+            <div class="text-left col-md-6 col-md-offset-3 col-lg-offset-0 col-lg-3">
+                <h4>Specialists </h4>
+                <p><a href="https://www.caredash.com/">Primary Care Physicians</a><br>
+                  <a href="https://www.caredash.com/">Pediatricians</a><br>
+                  <a href="https://www.caredash.com/">Optometrists</a><br>
+                  <a href="https://www.caredash.com/">Dentists</a><br>
+            </div>
+            <div class="text-center col-md-6 col-md-offset-3 col-lg-offset-0 col-lg-3">
+                <div class="row">
+                  Follow Us <br>
+                    <p style="text-align:center">
+                        <!-- somebody had done this icon layout, so I grabbed it-->
+                        <!-- shoutout to flashissue.com-->
+                        <br>
+                        <a href="https://www.caredash.com/" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/ueBIjxRoTBuYR6XWW1iO_v3qVW5nRUq5VZF9RQXi2_twitter.png" /> </a>&nbsp; &nbsp; &nbsp;
+                        <a href="https://www.caredash.com/" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/gHd2XoyiQbKBqljm7bzg_63j3xtd7SX28TTMeOSfZ_google.png" /> </a>&nbsp; &nbsp;&nbsp;
+                        <a href="https://www.caredash.com/" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/MsIJsIsDT9WLAxxH4aIK_OgdHV3vxSR2737LGd8cq_facebook.png" /> </a>&nbsp; &nbsp;&nbsp;
+                        <a href="https://www.caredash.com/" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/b8Xt2lN8TCKhilmoHXGW_TCjqF6FgS86WoWzUOQCh_pinterest.png" /> </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</body>
+
+</html>
