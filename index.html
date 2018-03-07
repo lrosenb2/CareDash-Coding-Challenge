@@ -12,22 +12,9 @@
     <script src="jquery-1.11.3.min.js"></script>
     <script src="bootstrap.js"></script>
 </head>
-<!-- Bootstrap is my friend! -->
 
+<!-- Bootstrap is my friend! -->
 <body>
-  <script type="text/javascript">
-    /* Login Logic */
-    $( "#login" ).submit(function( event ) {
-      var l = document.forms["login"]["password"].value;
-      console.log(l);
-      if (l == "") {
-          alert("Password must be filled out");
-          return false;
-      }
-      console.log(event.password);
-      event.preventDefault();
-    });
-</script>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">

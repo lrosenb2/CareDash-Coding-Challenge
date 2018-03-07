@@ -1,0 +1,15 @@
+#!/bin/bash
+
+curl -XPOST -H 'Content-Type: application/json' -d '{ "doctor": {"name":"Jane Doe"} }' http://localhost:5000/doctors
+
+curl -XPOST -H 'Content-Type: application/json' -d '{ "review":{ "description": "Jane Doe is a great doctor. Review 1"} }' http://localhost:5000/doctors/1/reviews
+
+curl -XPOST -H 'Content-Type: application/json' -d '{ "review":{ "description": "Jane Doe is really a great doctor. Review 2"} }' http://localhost:5000/doctors/1/reviews
+
+curl -XGET -H 'Content-Type: application/json' http://localhost:5000/doctors
+
+curl -XGET -H 'Content-Type: application/json' http://localhost:5000/doctors/1
+
+curl -XDELETE -H 'Content-Type: application/json' http://localhost:5000/doctors/1/reviews/2
+
+curl -XDELETE -H 'Content-Type: application/json' http://localhost:5000/doctors/1
